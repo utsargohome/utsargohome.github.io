@@ -174,4 +174,8 @@ a:hover{
     .contact{
       left: auto !important;
     }
+    .btn-lang{
+      top: 10px !important;
+      left: 10px !important
+    }
   }
