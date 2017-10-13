@@ -40,8 +40,10 @@
     <div class="form-group">
         <textarea name="entry.839337160" class="form-control" id="entry.839337160" placeholder="Your message"></textarea>
     </div>
-
-    <button type="submit" class="btn btn-default">Submit</button>
+    <div class="form-group">
+    <input type="submit" class="btn btn-default" value="Submit">
+    </div>
+    
   </form>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   
@@ -51,7 +53,9 @@
 </div>
 
 <!-- scripts -->
-<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+var submitted=false;
+</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
