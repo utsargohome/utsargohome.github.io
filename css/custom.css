@@ -170,3 +170,8 @@ a:hover{
     }
   }
   
+  @media (max-width:576px){
+    .contact{
+      left: auto !important;
+    }
+  }
