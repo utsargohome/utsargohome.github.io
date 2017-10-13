@@ -12,7 +12,14 @@ a:hover{
   text-decoration: none !important;
   font-weight: bold;
 }
-
+.contact{
+  background: #CBCAC7;
+  padding: 20px;
+  top: 40%;
+  left: 33.33%;
+  position: absolute !important;
+  border-radius: 5px;
+}
 .logo{
   top: 50% !important;
   left: 50% !important;
