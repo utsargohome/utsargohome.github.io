@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home | Utsargo Roy</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Home - Utsargo Roy" />
+  <meta property="og:description" content="Welcome" />
+  <meta property="og:image"              content="thumbnail-en.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/png" href="fav-en.png">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/d292af0a66.js"></script>
+  
+</head>
+<body>
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- main content-->
+<a href="index.html"><div class="center wave logo" style="top: 20% !important;">U</div></a>
+
+<div id="page-404" class="col-sm-6">
+    <h2>Nothing found!</h2>
+    <p>Sorry. We did not find what you are asking for. Please go to <a heref="index.html">homepage</a> and try again.<br>
+        <b>Wait a moment!</b><br>
+        Are you searching any blog post? Recently I've changed my blog url. Please go <a href="https://blog.utsargo.work">there</a> then.</p>
+<hr>
+    <h2>কিছু পাওয়া যায় নি!</h2>
+    <p>দুঃখিত। আপনি যা খুঁজছেন তা আমরা খুজে পাই নি। দয়া করে <a href="index-bn.html">নীড়পাতায়</a> গিয়ে আবার চেষ্টা করুন!<br>
+    <b>দাঁড়ান!</b><br>
+    আপনি কি কোনো ব্লগ পোস্ট খোঁজ করছেন। সম্প্রতি আমি আমার ব্লগের ঠিকানা পরিবর্তন করেছি। তাই যাদি হয় তবে <a href="https://blog.utsargo.work">এখানে</a> যান।</p>    
+</div>
+
+<!--footer-->
+<div class="footer"><small><span class="copyleft">&copy</span> All contents are copylefted. Should be found in github.<br>
+Design and developed by <b>Utsargo Roy</b></small></div>
+
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>

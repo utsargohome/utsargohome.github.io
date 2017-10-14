@@ -171,7 +171,7 @@ a:hover{
   }
   
   @media (max-width:576px){
-    .contact{
+    .contact,#page-404{
       left: auto !important;
     }
     .btn-lang{
@@ -204,3 +204,11 @@ a:hover{
       text-align: center;
     }
   }
+#page-404{
+  background: #CBCAC7;
+  padding: 20px;
+  top: 40%;
+  left: 25;
+  position: absolute !important;
+  border-radius: 5px;
+}
